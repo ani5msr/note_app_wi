@@ -11,7 +11,7 @@ from django.views.decorators.csrf import csrf_exempt
 class NoteListCreate(generics.ListCreateAPIView):
 # ListAPIView requires two mandatory attributes, serializer_class and
 # queryset.
-# We specify TodoSerializer which we have earlier implemented
+# We specify Serializer which we have earlier implemented 
     serializer_class = NoteSerializer
     permission_classes = [permissions.IsAuthenticated]
     def get_queryset(self):
