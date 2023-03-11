@@ -42,6 +42,7 @@ def signup(request):
             return JsonResponse(
             {'error':'username taken. choose another username'},
             status=400)
+#csrf is used for enalbing the front end to use the backend api 
 @csrf_exempt
 def login(request):
     if request.method == 'POST':
