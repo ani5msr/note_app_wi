@@ -23,6 +23,9 @@ To start the app,
 
 **SuperUser functionalities**
 
+To create a super user
+``` python manage.py createsuperuser```
+
 User groups are divided into **allowed users** and only **only read allowed users**, superuser can allow a user to login through admin and either add note or only view note by putting them in group,
 
 For allowing a user to login through admin, superuser should grant staff status to the particular user to allow him to login and view their notes
