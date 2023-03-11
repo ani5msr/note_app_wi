@@ -7,6 +7,7 @@ import Login from './components/login';
 import Signup from './components/signup';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Navbar';
 function App() {
 return (
 <div className="App">
@@ -14,8 +15,17 @@ return (
 <div className="container-fluid">
 <Navbar.Brand>Notes App</Navbar.Brand>
 <Nav className="me-auto">
-<Nav.Link href="#home">Home</Nav.Link>
-<Nav.Link href="#link">Link</Nav.Link>
+<Container>
+<Link class="nav-link" to={"/notes"}>Notes</Link>
+{ true ? (
+<Link class="nav-link">Logout </Link>
+) : (
+<>
+<Link class="nav-link" to={"/login"}>Login</Link>
+<Link class="nav-link" to={"/signup"}>Sign Up</Link>
+</>
+)}
+</Container>
 </Nav>
 </div>
 </Navbar>
