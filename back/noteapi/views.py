@@ -37,7 +37,7 @@ def signup(request):
             password=data['password'])
             user.save()
             token = Token.objects.create(user=user)
-            return JsonResponse({'token':str(token)},status=201)
+            return JsonResponse({'token':str(token),'status': 'created'},status=201)
         except IntegrityError:
             return JsonResponse(
             {'error':'username taken. choose another username'},
@@ -59,4 +59,4 @@ def login(request):
             token = Token.objects.get(user=user)
         except: # if token not in db, create a new one
             token = Token.objects.create(user=user)
-        return JsonResponse({'token':str(token)}, status=201)
+        return JsonResponse({'token':str(token), 'status': 'login successful'}, status=201)
