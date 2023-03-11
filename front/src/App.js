@@ -9,6 +9,18 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Navbar';
 function App() {
+const [user, setUser] = React.useState(null);
+const [token, setToken] = React.useState(null);
+const [error, setError] = React.useState('');
+async function login(user = null){ // default user to null
+setUser(user);
+}
+async function logout(){
+setUser(null);
+}
+async function signup(user = null){ // default user to null
+setUser(user);
+}
 return (
 <div className="App">
 <Navbar bg="primary" variant="light">
