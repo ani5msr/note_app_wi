@@ -41,6 +41,30 @@ return (
 </Nav>
 </div>
 </Navbar>
+<div className="container mt-4">
+<Switch>
+<Route exact path={["/", "/notes"]} render={(props) =>
+<NotesList {...props} token={token} />
+}>
+</Route>
+<Route path="/notes/create" render={(props)=>
+<AddNote {...props} token={token} />
+}>
+</Route>
+<Route path="/notes/:id/" render={(props)=>
+<AddNote {...props} token={token} />
+}>
+</Route>
+<Route path="/login" render={(props)=>
+<Login {...props} login={login} />
+}>
+</Route>
+<Route path="/signup" render={(props)=>
+<Signup {...props} signup={signup} />
+}>
+</Route>
+</Switch>
+</div>
 </div>
 );
 }

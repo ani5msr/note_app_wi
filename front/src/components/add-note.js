@@ -2,7 +2,7 @@ import React from 'react';
 function AddNote() {
 return (
 <div className="App">
-Add Todo
+Add Notes
 </div>
 );
 }
