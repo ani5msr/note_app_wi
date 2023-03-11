@@ -1,6 +1,10 @@
 # note_app_wi
 
 **Notes app using django**
+
+To start the app, 
+```cd back```
+```python manage.py runserver```
 + **Curl for sign up**
 + ``` curl --header "Content-Type: application/json" \ --request POST \ --data "{\"username\":\"newuser\",\"password\":\"newpass\"}" \ http://127.0.0.1:8000/noteapi/signup/ ```
 
@@ -22,3 +26,14 @@
 User groups are divided into **allowed users** and only **only read allowed users**, superuser can allow a user to login through admin and either add note or only view note by putting them in group,
 
 For allowing a user to login through admin, superuser should grant staff status to the particular user to allow him to login and view their notes
+
+**FrontEnd**
+To start frontend 
+```cd front``` 
+```npm start```
+![image](https://user-images.githubusercontent.com/39771769/224469974-117ca27f-c0e5-4b0e-a03d-cdb59c4c2ae3.png)
+
+Used react bootstrap and react navbar currently for frontend screen
+
+**To be done**
+Connect frontend to backend using axios
