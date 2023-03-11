@@ -28,6 +28,9 @@ User groups are divided into **allowed users** and only **only read allowed user
 For allowing a user to login through admin, superuser should grant staff status to the particular user to allow him to login and view their notes
 
 **FrontEnd**
+To start frontend 
+```cd front``` 
+```npm start```
 ![image](https://user-images.githubusercontent.com/39771769/224469974-117ca27f-c0e5-4b0e-a03d-cdb59c4c2ae3.png)
 
 Used react bootstrap and react navbar currently for frontend screen
