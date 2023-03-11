@@ -11,3 +11,9 @@ Login Functionality
 Add a new note
 
 ![image](https://user-images.githubusercontent.com/39771769/224467313-a661a58d-4af2-43cf-b6ff-3ef90514bd3b.png)
+
+**SuperUser functionalities**
+
+User groups are divided into **allowed users** and only **only read allowed users**, superuser can allow a user to login through admin and either add note or only view note by putting them in group,
+
+For allowing a user to login through admin, superuser should grant staff status to the particular user to allow him to login and view their notes
