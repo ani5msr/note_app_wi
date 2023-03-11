@@ -1,11 +1,11 @@
 # note_app_wi
 
-##Notes app using django
-**Curl for sign up**
-``` curl --header "Content-Type: application/json" \ --request POST \ --data "{\"username\":\"newuser\",\"password\":\"newpass\"}" \ http://127.0.0.1:8000/noteapi/signup/ ```
+**Notes app using django**
++ **Curl for sign up**
++ ``` curl --header "Content-Type: application/json" \ --request POST \ --data "{\"username\":\"newuser\",\"password\":\"newpass\"}" \ http://127.0.0.1:8000/noteapi/signup/ ```
 
-**Curl for log in**
-``` curl --header "Content-Type: application/json" \ --request POST \ --data "{\"username\":\"newuser\",\"password\":\"newpass\"}" \ http://127.0.0.1:8000/noteapi/login/ ```
++ **Curl for log in**
++ ``` curl --header "Content-Type: application/json" \ --request POST \ --data "{\"username\":\"newuser\",\"password\":\"newpass\"}" \ http://127.0.0.1:8000/noteapi/login/ ```
 Signup Functionality
 ![signup](https://user-images.githubusercontent.com/39771769/224467200-2f997ade-97f6-4d45-a22e-b394fc6dae9d.JPG)
 
