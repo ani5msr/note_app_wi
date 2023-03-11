@@ -3,7 +3,7 @@
 **Notes app using django**
 
 To start the app, 
-```cd back``
+```cd back```
 ```python manage.py runserver```
 + **Curl for sign up**
 + ``` curl --header "Content-Type: application/json" \ --request POST \ --data "{\"username\":\"newuser\",\"password\":\"newpass\"}" \ http://127.0.0.1:8000/noteapi/signup/ ```
